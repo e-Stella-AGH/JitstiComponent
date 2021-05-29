@@ -2,7 +2,7 @@
 
 > Jitsi Component for e-Stella project
 
-[![NPM](https://img.shields.io/npm/v/e-stella-jitsi.svg)](https://www.npmjs.com/package/e-stella-jitsi) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/e-stella-jitsi.svg)](https://www.npmjs.com/package/e-stella-jitsi) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) ![CI](https://github.com/e-Stella-AGH/JitstiComponent/actions/workflows/node.js.yaml/badge.svg)
 
 ## Install
 
