@@ -7,4 +7,4 @@ export const adminToolbarButtons = [
   'e2ee', 'security'
 ]
 
-export const attendeeToolbarButtons = ['microphone', 'camera', 'chat', 'settings', 'desktop']
+export const attendeeToolbarButtons = ['microphone', 'camera', 'chat', 'settings', 'desktop', "hangup"]

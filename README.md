@@ -13,17 +13,35 @@ npm install --save e-stella-jitsi
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'e-stella-jitsi'
-import 'e-stella-jitsi/dist/index.css'
+import { JitsiComponent } from 'e-stella-jitsi'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <JitsiComponent displayName="displayName" roomName="roomName" admin={true} />
   }
 }
 ```
+
+### Props
+
+| Prop  |  Type |  Meaning | Is Required |
+|---|---|---|---|
+| displayName  |  string |  Display name of attendee of the meeting | Yes|
+|roomName   | string  | Room Name of the meeting  | Yes |
+| admin | boolean | If current attendee should have admin rights (see below) | Yes |
+| jitsiConfig | object | Custom Jisti config (see below) | No |
+
+### Admin rights
+If attendee is an admin, they have full rights in the meeting, eg. change
+background, mute everyone else, etc. To see all their options, see
+`buttonsConfigs.js` file.
+
+### Custom Jitsi config
+Here, we use default Jitsi configuration file (room name, display name
+and buttons excluded). You can also give your own config object if
+you feel that our isn't enough for your needs.
 
 ## License
 
