@@ -1,10 +1,9 @@
 import React from 'react'
 
-import { ExampleComponent } from 'e-stella-jitsi'
-import 'e-stella-jitsi/dist/index.css'
+import { JitsiComponent } from 'e-stella-jitsi'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <JitsiComponent displayName="displayName" roomName="roomName" admin={true} />
 }
 
 export default App
