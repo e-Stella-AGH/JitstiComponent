@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
-import { adminToolbarButtons, attendeeToolbarButtons } from './buttonsConfigs'
 import { createJitsiConfig, initJitsi } from './JitsiFunctions'
 
 export const JitsiConferenceComponent = (props) => {
   const [jitsi, setJitsi] = useState({})
 
-  const toolbarButtons = props.admin
-    ? adminToolbarButtons
-    : attendeeToolbarButtons
-
   useEffect(() => {
-    initJitsi(setJitsi, createJitsiConfig(props, toolbarButtons))
+    initJitsi(setJitsi, createJitsiConfig(props))
     return () => jitsi?.dispose?.()
   }, [])
 

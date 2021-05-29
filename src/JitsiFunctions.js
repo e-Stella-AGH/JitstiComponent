@@ -1,3 +1,5 @@
+import { adminToolbarButtons, attendeeToolbarButtons } from './buttonsConfigs'
+
 const loadJitsiAPI = () => {
   let resolver = null
 
@@ -22,7 +24,11 @@ const createJistiMeet = (jitsiConfig) => {
   return new window.JitsiMeetExternalAPI('meet.jit.si', jitsiConfig)
 }
 
-export const createJitsiConfig = (props, toolbarButtons) => {
+export const createJitsiConfig = (props) => {
+  const toolbarButtons = props.admin
+    ? adminToolbarButtons
+    : attendeeToolbarButtons
+
   const defaultConfig = defaultJitsiConfig({
     roomName: props.roomName,
     displayName: props.displayName,
