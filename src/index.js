@@ -11,7 +11,7 @@ export const JitsiComponent = (props) => {
   }, [])
 
   return (
-    <div id='jitsi-container-id' style={{ height: '100vh', width: '100%' }} />
+    <div id='jitsi-container-id' style={{ height: '100%', width: '100%' }} />
   )
 }
 
